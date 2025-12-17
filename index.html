@@ -1,1 +1,82 @@
-file:///C:/Users/admin/Downloads/card-dien-tu-tran-thanh-tra.html
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Visit Điện Tử – Trần Thanh Trà</title>
+<style>
+body {
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:radial-gradient(circle at top, #0a2a4a, #031526);
+  font-family:Segoe UI, Arial, sans-serif;
+}
+.card {
+  width:360px;
+  padding:28px 24px;
+  border-radius:22px;
+  background:linear-gradient(135deg,#0d3b66,#0a2f52);
+  color:#fff;
+  box-shadow:0 0 25px rgba(0,180,255,.5),0 0 70px rgba(0,120,255,.35);
+  position:relative;
+  overflow:hidden;
+}
+.card:before {
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:linear-gradient(120deg,transparent,rgba(0,200,255,.6),transparent);
+  animation:glow 4s linear infinite;
+}
+@keyframes glow {
+  from {transform:translateX(-100%);}
+  to {transform:translateX(100%);}
+}
+.content {position:relative;z-index:1;}
+h1 {text-align:center;font-size:22px;margin:0;}
+.sub {text-align:center;font-size:14px;margin-top:6px;}
+.mobifone {text-align:center;color:#7fd4ff;font-weight:600;margin-top:2px;}
+.desc {text-align:center;font-size:14px;margin:18px 0;line-height:1.5;}
+.qr {display:flex;justify-content:center;margin:14px 0;}
+.qr img {width:130px;height:130px;background:#fff;padding:8px;border-radius:14px;}
+a {
+  display:block;
+  text-align:center;
+  margin-top:10px;
+  padding:10px 12px;
+  border-radius:14px;
+  text-decoration:none;
+  color:#fff;
+  background:rgba(255,255,255,.08);
+}
+a:hover {background:rgba(0,180,255,.25);box-shadow:0 0 15px rgba(0,180,255,.7);}
+.hint {text-align:center;font-size:12px;opacity:.8;margin-top:8px;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="content">
+    <h1>TRẦN THANH TRÀ</h1>
+    <div class="sub">Shop đăng ký dịch vụ viễn thông</div>
+    <div class="mobifone">Mobifone</div>
+
+    <div class="desc">
+      Nạp thẻ · Đăng ký gói cước · Dịch vụ sim số (TT & TS)
+    </div>
+
+    <div class="qr">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA3CAYAAABHGbl4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVSSURBVGhD7Zq/MmxLFMZ7bh1/SikCAp5AeQGhIifgBZBIeAESRDwAMZ6ATEis5GRCAgGlSur2t+1v9HxnreneZm7Vvafur2rVntW9us/Z/c3Xu2dM6zMS/kD+qq9/HK2rq6vPp6enOi1nY2OjfvXF6elpddV28Pr6Gi4uLsL4+HhYXV2tW3+HdU3BvMvLy2FgYKBuiSwuLuKt2DgUrx3c399XfTMzM3WLDeuaBuZ9f3+vZ/mihRu7vr4Oe3t7sSbPwcFBdY1jq+v+/n51VdL2h4eHMDs7GyYmJsL29nbdGsLk5GRH7tV5vLy8hJOTkxBvLNzd3YXR0dG6J0LFSkFtWp/LgaeEKliqLEnrXcXi61iTV6DValVXr56KWu8ArrCnHBWDAniN+uPj47rqG6s+qxheW0E0J2mtBhVQRUpzDateFet5u4dilspQjKph5VGjq4+VR02JnxrTq2JpTRrE6uOKK/8qxVJlLNiP2Nraqlu/8JTsC/+Uxyw8RXK5Roliv2JHB91W30L9ZY1Pdzf2cxxyeM2CHlS8+g769RzT9pScMsRr9+imWM8nDz7XdDwVUUUt9LnU15NH0yAluaeUlzcNS7Ffa2trYX5+Pvb/DMszP8XzVA6MGxwcrLOa+gZ7BlNZ06GtVLF+0jo7O/t8fHyM83en1DPd6ugJekhzeo27aGluUuoxYvUhlLS91DulypYo3fYYdzvC9zrbcx5Shaw63e2oWA4og/lwLaa+wfaqMYjXrnSr81ZYlSxVpESxtse6fY4C2u95SZ9zab96hFA5z3uE4/V5h/bNzc3OnVE9RrzcaydW7imlCuXCq0d79uThKaGwX08elmKeUoqnFNF5WB9vrPl3Hugr6dew8JTy8hxpvXvy8JRSz+WUtDyarnAKFEjfKdrPcZ7iWt9BfYPVnSepC+u8sLA8keL1e4pqWIq1jo6OMCCcn5/HmhCgYDcWFhaqK7/x5TfAZH19veMKRkZGwtzcXMA3zru7u+1voQh3uampqXB4eBg+Pj7C7e1te5zmnIf1+CZ4aWmpt2+CieZKOsZTgHjKlOYW7U/QuvJElUmVAJqTdD6saApWHOOmp6erFSdsf3t7M3MlnQdeHR4ernsiTXdF5rmw4EozVIFcePVod59j8XWs+YZK0FM3NzfV1fNYTlmAlU//mqLeIfQQSb20srLSnod18cbKn2NoS9ub5iV4XvGUVdLxvz3HYoeJek6V0H6iSsWzaLWyOzs7dcs36iXSzVOYh97EFf8PKDk0NFRX1eQ8pqDWqme7Bij1kBdUzFPYovqL5vPzs+kJCygAWM8rvUfoOTwXSz2ksG5sbKzyFueh17pS3+CPwRTWNGxH9OqhXJ1F++TRFCrH0z1PLGznFcrF/1B1uqBH9ASh/fSQdyJRuj7Hmgbx2gnauNLqkZ/mGuh3d0Vvl1PoHZLbHblrlZDucilQEvNB6fTfo+Im/doVFasup4iiCmldOj578vB2R/WU1utuqScWQG/RK3heXV5etnc9hf3qMfVgvLH+/w26NEeoUqWh46w8qxgVUbRfc+6K1tmSXqAyVMKDCnnjoBDUQs5f/LifxwheW0G83GsHvSrk9XfDPSs2RXdH5vAcVtbCO3FwV+Qu6e1+aOdzL/t5DK+tILlcYb8VJSsPVDlVFHn2dK8r3xRrV1XPEORpPXc7KkGoOOcpei6qYjlQm9Z7eRo5zzBydapwkWLWSjdBx6fK4/mTek29RSWpoOdJVdirq6BiTYNYfYgUzyMkp2QuLMV6/oWp58n0TKm/HIVH0l+a/vSXpQTz6S9M//+x83+LEP4GuK2E2Q728eAAAAAASUVORK5CYII=" alt="QR truy cập shop">
+    </div>
+
+    <a href="https://ctvmbf.vn/site?rf=4YCGP7" target="_blank">
+      https://ctvmbf.vn/site?rf=4YCGP7
+    </a>
+    <div class="hint">Nhấp link hoặc quét QR để mở trang</div>
+  </div>
+</div>
+</body>
+</html>
